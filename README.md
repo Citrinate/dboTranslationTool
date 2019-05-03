@@ -1,6 +1,6 @@
 # Dragon Ball Online Translation Tool
 
-This tool is meant to organize the collaborative efforts of the localization of Dragon Ball Online.
+This tool is meant to organize the collaborative efforts of those wishing to localize Dragon Ball Online.
 
 ## Install Guide
 
@@ -11,7 +11,7 @@ This tool is meant to organize the collaborative efforts of the localization of 
 
 ## User states
 
-All users fall into one of the four categories:
+All users fall into one of four categories:
 
 **Unauthorized user**: All users who create an account will recieve a prompt telling them that they cannot submit translations until their accounts are approved by an admin user.
 
@@ -25,7 +25,7 @@ All users fall into one of the four categories:
 
 `game_strings` table breakdown:
 
-* `file`: Breaks down the strings first by the file they're contained in.  The filenames for these are defined in the model.php file, and are defaulted to:
+* `file`: Breaks down the strings first by the file they're contained in.  The filenames for these are defined in the `model.php` file, and are defaulted to:
   * 0 = `.\language\local_data.dat`
   * 1 = `.\language\local_sync_data.dat`
   * 2 = `.\data\o_table_text_all_data.edf`
@@ -43,7 +43,7 @@ All users fall into one of the four categories:
 * `status`: Represents the current state of the submission and may have one of the following values:
   * 0 = The string is still pending; no admin has acted on it yet.
   * 1 = The string was accepted by an admin user and is now in the `game_strings` database.  The string that used to be in the `game_strings` database is now in this row's `action_replace` column.
-  * 2 = The string was not accepted by an admin user.
+  * 2 = The string was denied by an admin user.
 
 ## Other Details
 
