@@ -1,0 +1,1 @@
+<h2><?php echo isset($error) ? $error : "Unknown error"; ?></h2>
